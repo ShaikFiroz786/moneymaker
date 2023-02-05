@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="about.css">
+
+</head>
+<body class="body" style="background-color: black;">
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo"> &#129297</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="mainpage.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="highpayingapps.html" class="nav-link">High paying Apps</a>
+                
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+              
+
+                
+            </ul>
+
+            <div class="hamburger" >
+                <span class="bar" ></span>
+                <span class="bar" ></span>
+                <span class="bar" ></span>
+            </div>
+        </nav></header><br><br>
+
+
+        <div class="aboutus"><p class="aboutuspara">
+            Hey dudes!, welcome to our website!. we are moneymakers lets repeat it once again we are 
+            money makers. hurray &#127881;. Guys literally we brought all money making apps at one place.
+            when you sign up to these type of apps form playstore, appstore Do you get any amount. Exactly 
+            the answer is no. So here is a chance for you to loot the money as much as you can right now.
+            right over from there you can refer your family friends and earn money. Click the button below to see 
+            the estimated amount you get from downloading the apps from our wesite. 
+        </p>
+<a href="mainpage.html"> <button id="getamount">Download apps now</button>
+</a>
+
+        
+        
+         
+        </div>
+
+
+
+</body>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+hamburger.addEventListener("click", mobileMenu);
+
+
+
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    
+}
+
+
+
+
+
+function search_apps(){
+    let input = document.getElementById('searchinput').value
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName('content')
+    for(i = 0;i<x.length;i++){
+        if(!x[i].innerHTML.toLowerCase().includes(input)){
+            x[i].style.display = "none"
+        }
+        else{
+            x[i].style.display = "gallery"
+        }
+    }
+
+}
+
+
+
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.body.style.backgroundColor ="grey";
+  } else {
+    document.body.style.backgroundColor = "grey";
+  }
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+
+
+</script>
+</html>

@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: reverse;
+  
+}
+
+html {
+    font-size: 120%;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+li{
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-style: bold;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+    background-color: #075E54;
+    color: white;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.nav-link:hover{
+    color: #e72b2b;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #05040b;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        letter-spacing: 0.5vh;
+column-gap: 3px;       
+ flex-direction: column;
+        background-color: #fff;
+        width: 70%;
+        height: 91vh;
+        border-radius: 10px;
+        padding: -10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    html {
+        font-size: 75%;
+        font-family: 'Roboto', sans-serif;
+       
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+        gap: 4px;
+    }
+
+    .hamburger {
+        display: block;
+        color: #05040b;
+        cursor: pointer;
+    }
+
+}
+
+
+
+
+.appslist{
+color: #e72b2b;
+display: inline-block;}
+
+
+.searchapps{
+    width: 50%;
+    float: right;
+    font-size: 30px;
+}
+
+#searchinput{
+    border: 1px solid black; border-radius: 9px; padding: 6px; width: 60%; margin: auto; border: 1px solid rgb(46, 46, 46); font-size: 30px;
+}
+
+#searchinginput{
+    border: 1px solid black; border-radius: 9px; padding: 6px;font-size: 30px; background-color:  crimson; color: white; margin: auto; border: 1px solid rgb(46, 46, 46); 
+}
+.gallery{
+
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content: center;
+align-items: center;
+margin: 50px 0;
+
+}
+
+.content
+{
+    width: 20%;
+    height: 30%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+    box-shadow: 0 14px 15px rgb(42, 34, 34);
+    transition: .4s;
+    background: white;
+
+}
+
+.content:hover{
+    box-shadow:  0 3px 6px rgb(56, 48, 48);
+    transform: translate(0px, -8px);
+}
+
+.image{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+p{
+    text-align: center;
+    color: blue;
+    padding-top: 0 8px;
+
+}
+
+h5{
+    text-align: center;
+    color: orangered;
+}
+
+.searchbox{
+    box-sizing: content-box;
+    border-radius: 2px rgb(77, 135, 183);
+}
+
+
+
+.download{
+text-align: center;
+background-color: rgb(25, 178, 220);
+color: white;
+width: 100%;
+padding: 3px;
+font-size: 20px;
+outline: none;
+cursor: pointer;
+border-radius: 7px;
+ 
+}
+
+@media(max-width:1000px){
+    .content{
+        width: 20%;
+    }
+.image{
+    max-width: 100%;
+}
+}
+
+
+@media(max-width:750px){
+    .content{
+        width: 40%;
+    }
+    .image{
+        width: 65%;
+    }
+
+    .searchapps{
+        width: 75%;
+        float: right;
+    }
+
+    #searchinput{
+        border: 1px solid black; border-radius: 9px; padding: 6px; width: 60%; margin: auto; border: 1px solid rgb(46, 46, 46); font-size: 20px;
+    }
+    
+    #searchinginput{
+        border: 1px solid black; border-radius: 9px; padding: 6px;font-size: 20px; background-color:  crimson; color: white; margin: auto; border: 1px solid rgb(46, 46, 46); 
+    }
+}
+
+.checked {
+    color: orange;
+  }
+
